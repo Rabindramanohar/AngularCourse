@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-lg btn-primary" 
+      [disabled]="!allowServer"
+      (dblclick)="onCreateServer()">Add Server</button>
+      <!-- <p [innerText] = "allowServer"></p> -->
+      <p>{{serverStatus}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <input type="text"
+      class="form-control"
+      (input)="onUpdatedServer($event)">
+      <p>{{updatedServerStatus}}</p>
+    </div>
+  </div>
+</div>
