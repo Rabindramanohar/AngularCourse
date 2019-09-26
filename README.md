@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DemoTraining
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# AngularCourse
+Learning angular form Maxmilian 
+>>>>>>> b177bd23f1fd0b66202499f186dac3f731272d47
