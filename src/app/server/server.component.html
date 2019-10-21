@@ -1,14 +1,25 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <button class="btn btn-lg btn-primary" 
+      <!-- <button class="btn btn-lg btn-primary" 
       [disabled]="!allowServer"
       (click)="onCreateServer()"
-      >Add Server</button>
+      >Add Server</button> -->
       <!-- <p [innerText] = "allowServer"></p> -->
-      <p *ngIf="serverCreated">ngIf testing herere :{{serverStatus}}</p>
-      <p>{{serverStatus}}</p>
-    </div>
+      <!-- <p *ngIf="serverCreated">Server was created! and Server Name:{{serverStatus}}</p> -->
+      <!-- <p [ngStyle]="{backgroundColor: getColor()}"
+      
+      >Server was created! and Server Name:{{serverStatus}}</p>
+    </div> -->
+
+    <br /><br /><br /><br /><br />
+    <label>[ngStyle checking]</label>
+    <p [ngStyle]="{backgroundColor: getColor()}"
+      [ngClass]="{online: serverStatus ==='online'}"
+    >
+      {{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}
+    </p>
+    
   </div>
   <div class="row">
     <div class="col-sm-12">
@@ -16,11 +27,11 @@
       class="form-control"
       (input)="onUpdatedServer($event)"> -->
 
-      <input
+      <!-- <input
       type="text"
       class="form-control"
       [(ngModel)]= "serverName"
-      >
+      > -->
       <!-- <p>{{serverName}}</p> -->
     </div>
   </div>
