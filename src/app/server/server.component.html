@@ -3,17 +3,25 @@
     <div class="col-xs-12">
       <button class="btn btn-lg btn-primary" 
       [disabled]="!allowServer"
-      (dblclick)="onCreateServer()">Add Server</button>
+      (click)="onCreateServer()"
+      >Add Server</button>
       <!-- <p [innerText] = "allowServer"></p> -->
+      <p *ngIf="serverCreated">ngIf testing herere :{{serverStatus}}</p>
       <p>{{serverStatus}}</p>
     </div>
   </div>
   <div class="row">
     <div class="col-sm-12">
-      <input type="text"
+      <!-- <input type="text"
       class="form-control"
-      (input)="onUpdatedServer($event)">
-      <p>{{updatedServerStatus}}</p>
+      (input)="onUpdatedServer($event)"> -->
+
+      <input
+      type="text"
+      class="form-control"
+      [(ngModel)]= "serverName"
+      >
+      <!-- <p>{{serverName}}</p> -->
     </div>
   </div>
 </div>
